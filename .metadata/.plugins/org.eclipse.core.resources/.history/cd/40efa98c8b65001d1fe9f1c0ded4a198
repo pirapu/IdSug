@@ -1,0 +1,45 @@
+package com.iitm.raj.hello;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Set;
+
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.process.CoreLabelTokenFactory;
+import edu.stanford.nlp.process.PTBTokenizer;
+
+
+
+
+public class TokenizerDemo {
+
+  public static void main(String[] args) throws IOException {
+	  
+	  ASTReader ast = new ASTReader();
+		 String message = "";
+		 //System.out.println("hellllllllllllll00"+path);
+		try {
+			@SuppressWarnings("static-access")
+			Set<String> names1 =	ast. parse(ast.readFileToString("E:\\runtime-EclipseApplication\\raaaj\\src\\raj"));
+			for(String id:names1){
+				//System.out.println(id);
+				 message +=id;
+			 }
+			System.out.println("raaaj"+message);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	  
+    for (String arg : args) {
+      
+      // option #2: By token
+      PTBTokenizer<CoreLabel> ptbt = new PTBTokenizer<>(new FileReader(arg),
+              new CoreLabelTokenFactory(), "");
+      while (ptbt.hasNext()) {
+        CoreLabel label = ptbt.next();
+        System.out.println(label);
+      }
+    }
+  }
+}

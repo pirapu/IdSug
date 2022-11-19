@@ -1,0 +1,56 @@
+package com.iitm.raj.hello;
+
+import java.util.Set;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.runtime.IPath;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.IEditorInput;
+import org.eclipse.ui.IEditorPart;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.IWorkbenchPage;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.part.FileEditorInput;
+
+public class HelloHandler extends AbstractHandler {
+
+	@SuppressWarnings("static-access")
+	@Override
+	public Object execute(ExecutionEvent event) throws ExecutionException {
+		
+		//reading active file name
+		IWorkbench wb = PlatformUI.getWorkbench();
+		IWorkbenchWindow window = wb.getActiveWorkbenchWindow();
+		IWorkbenchPage page = window.getActivePage();
+		IEditorPart editor = page.getActiveEditor();
+		IEditorInput input = editor.getEditorInput();
+		IPath path = ((FileEditorInput)input).getPath();
+		String url = path.toString();
+		
+		
+		//Splitting the string token
+		String message = "";
+		CamelExplicitSplitter ces = new CamelExplicitSplitter();
+		ces.idfyIdentifiers(url);
+		Set<String> str1 = ces.splitNames;
+		Set<String> str2 = ces.unSplitNames;
+		for(String eachId1:str1){
+			 message += eachId1 + " ";
+		}
+		
+		for(String eachId2:str2){
+			 message += eachId2 + " ";
+		}
+		
+		
+		//for displaying the identifiers
+		Shell shell = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
+		MessageDialog.openInformation(shell, "Hi Eclipse", message);
+		return null;
+	}
+
+}

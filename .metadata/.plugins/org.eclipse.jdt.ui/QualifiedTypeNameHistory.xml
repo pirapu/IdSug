@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.eclipse.jface.dialogs.MessageDialog"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbench"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbenchWindow"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbenchPage"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IEditorPart"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IEditorInput"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IFileEditorInput"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.ASTReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.swing.JList"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.eclipse.core.runtime.IPath"/>
+</qualifiedTypeNameHistroy>
