@@ -9,10 +9,16 @@
     <fullyQualifiedTypeName name="org.eclipse.ui.IEditorInput"/>
     <fullyQualifiedTypeName name="org.eclipse.ui.IFileEditorInput"/>
     <fullyQualifiedTypeName name="com.iitm.raj.hello.ASTReader"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="javax.swing.JList"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.eclipse.core.runtime.IPath"/>
+    <fullyQualifiedTypeName name="java.util.zip.GZIPInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.DictWordChecker"/>
 </qualifiedTypeNameHistroy>

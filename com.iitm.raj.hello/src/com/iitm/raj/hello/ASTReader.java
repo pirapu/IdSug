@@ -16,10 +16,11 @@ import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 public class ASTReader {
  
 	static Set<String> names = new HashSet<String>();
+	
+	
 	//use ASTParse to parse string
 	public static Set<String> parse(String str) {
-		@SuppressWarnings("deprecation")
-		ASTParser parser = ASTParser.newParser(AST.JLS3);
+		ASTParser parser = ASTParser.newParser(AST.JLS18);
 		parser.setSource(str.toCharArray());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
  

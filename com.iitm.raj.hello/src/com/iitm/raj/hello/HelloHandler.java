@@ -44,7 +44,9 @@ public class HelloHandler extends AbstractHandler {
 			 message2 += eachId2 + "    ";
 		}
 		
-		
+		for(String eachId3 : str1){
+			 message2 += eachId3 + "    ";
+		}
 		
 		//Checking whether the string token is dictionary word or not
 		DictWordChecker dictCheck = new DictWordChecker();
@@ -56,7 +58,7 @@ public class HelloHandler extends AbstractHandler {
 		
 		//for displaying the identifiers
 		Shell shell = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
-		MessageDialog.openInformation(shell, fileName , message1);
+		MessageDialog.openInformation(shell, fileName , message2);
 		return null;
 	}
 
