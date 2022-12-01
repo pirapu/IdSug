@@ -33,6 +33,7 @@ public class HelloHandler extends AbstractHandler {
 		String url = path.toString();
 		
 		
+		
 		//Splitting the string token
 		String message1 = "";
 		String message2 = "";

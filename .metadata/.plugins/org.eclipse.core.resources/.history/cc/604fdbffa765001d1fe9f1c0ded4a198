@@ -1,7 +1,0 @@
-bin.includes = META-INF/,\
-               plugin.xml,\
-               icons/stanford-corenlp-4.5.1.jar,\
-               icons/apache-commons-lang.jar
-source.stanford-corenlp-4.5.1.jar = lib/
-jars.compile.order = stanford-corenlp-4.5.1.jar
-src.includes = lib/
