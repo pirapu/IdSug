@@ -12,4 +12,6 @@ Import-Package: javax.inject,
  org.eclipse.ecf.core.util;version="3.6.0"
 Bundle-Vendor: IITM
 Automatic-Module-Name: com.iitm.raj.hello
+Bundle-ClassPath: lib/json-simple-1.1.jar,
+ json-simple-1.1.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-18

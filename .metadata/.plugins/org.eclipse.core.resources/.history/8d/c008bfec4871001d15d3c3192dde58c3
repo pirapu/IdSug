@@ -1,0 +1,3152 @@
+{
+"abbreviations":[
+    {
+        "abbr": "$...", 
+        "desc": "indicates a DOM node"
+    },
+    {
+        "abbr": "2", 
+        "desc": "to"
+    },
+    {
+        "abbr": "abbr", 
+        "desc": "abbreviation"
+    },
+    {
+        "abbr": "abn", 
+        "desc": "abnormal" 
+        },
+    {
+        "abbr": "abs", 
+        "desc": "absolute"
+    },
+    {
+        "abbr": "abt", 
+        "desc": "abstract", 
+        "domain": "generic", 
+        "constraint": "",
+        "example": ""
+    },
+    {
+        "abbr": "ac", 
+        "desc": "autoCall"
+    },
+    {
+        "abbr": "ac", 
+        "desc": "access"
+    },
+    {
+        "abbr": "acc", 
+        "desc": "access", 
+        "domain": "generic", 
+        "constraint": "",
+        "example": ""
+    },
+    {
+        "abbr": "ack", 
+        "desc": "acknowledge"
+    },
+    {
+        "abbr": "acMth", 
+        "desc": "accessMethod"
+    },
+    {
+        "abbr": "accMth", 
+        "desc": "accessMethod"
+    },
+    {
+        "abbr": "ack", 
+        "desc": "acknoledgment"
+    },
+    {
+        "abbr": "acnt", 
+        "desc": "account"
+    },
+    {
+        "abbr": "acn", 
+        "desc": "action"
+    },
+    {
+        "abbr": "acp", 
+        "desc": "accept"
+    },
+    {
+        "abbr": "acpt", 
+        "desc": "accept"
+    },
+    {
+        "abbr": "acq", 
+        "desc": "acquire"
+    },
+    {
+        "abbr": "act", 
+        "desc": "action"
+    },
+    {
+        "abbr": "act", 
+        "desc": "active"
+    },
+    {
+        "abbr": "act", 
+        "desc": "actual"
+    },
+    {
+        "abbr": "act", 
+        "desc": "activate"
+    },
+    {
+        "abbr": "act", 
+        "desc": "activity"
+    },
+    {
+        "abbr": "ad", 
+        "desc": "activeDirectory"
+    },
+    {
+        "abbr": "addr", 
+        "desc": "address"
+    },
+    {
+        "abbr": "adj", 
+        "desc": "adjacent"
+    },
+    {
+        "abbr": "adl", 
+        "desc": "additional"
+    },
+    {
+        "abbr": "adm", 
+        "desc": "administrate", 
+        "domain": "generic", 
+        "constraint": "",
+        "example": ""
+    },
+    {
+        "abbr": "adp", 
+        "desc": "adopt"
+    },
+    {
+        "abbr": "adpt", 
+        "desc": "adapter"
+    },
+    {
+        "abbr": "adrLst", 
+        "desc": "addressList"
+    },
+    {
+        "abbr": "adv", 
+        "desc": "advance"
+    },
+    {
+        "abbr": "adv", 
+        "desc": "advance"
+    },
+    {
+        "abbr": "afn", 
+        "desc": "afinity"
+    },
+    {
+        "abbr": "agt", 
+        "desc": "agent"
+    },
+    {
+        "abbr": "ah", 
+        "desc": "activeHub"
+    },
+    {
+        "abbr": "al", 
+        "desc": "activeLink"
+    },
+    {
+        "abbr": "al", 
+        "desc": "activeList"
+    },
+    {
+        "abbr": "am", 
+        "desc": "accessMethod"
+    },
+    {
+        "abbr": "am", 
+        "desc": "accessMonitor"
+    },
+    {
+        "abbr": "al", 
+        "desc": "arrayList"
+    },
+    {
+        "abbr": "alc", 
+        "desc": "allocate"
+    },
+    {
+        "abbr": "alloc", 
+        "desc": "allocate"
+    },
+    {
+        "abbr": "alm", 
+        "desc": "alarm"
+    },
+    {
+        "abbr": "alr", 
+        "desc": "alert"
+    },
+    {
+        "abbr": "alrt", 
+        "desc": "alert"
+    },
+    {
+        "abbr": "als", 
+        "desc": "alias"
+    },
+    {
+        "abbr": "alt", 
+        "desc": "alternate"
+    },
+    {
+        "abbr": "alt", 
+        "desc": "alternative"
+    },
+    {
+        "abbr": "ale", 
+        "desc": "allow", 
+        "domain": "generic"
+    },
+    {
+        "abbr": "alwprx", 
+        "desc": "allowProxy"
+    },
+    {
+        "abbr": "ans", 
+        "desc": "answer"
+    },
+    {
+        "abbr": "anz", 
+        "desc": "analyze"
+    },
+    {
+        "abbr": "ap", 
+        "desc": "accessPath"
+    },
+    {
+        "abbr": "app", 
+        "desc": "application"
+    },
+    {
+        "abbr": "apy", 
+        "desc": "apply"
+    },
+    {
+        "abbr": "ara", 
+        "desc": "area"
+    },
+    {
+        "abbr": "arg", 
+        "desc": "argument"
+    },
+    {
+        "abbr": "arr", 
+        "desc": "array"
+    },
+    {
+        "abbr": "async", 
+        "desc": "asynchronous"
+    },
+    {
+        "abbr": "asc", 
+        "desc": "asynchronousCommunication"
+    },
+    {
+        "abbr": "asmt", 
+        "desc": "asignment"
+    },
+    {
+        "abbr": "asn", 
+        "desc": "asigned"
+    },
+    
+    {
+        "abbr": "at", 
+        "desc": "accessTime"
+    },
+    
+    {
+        "abbr": "at", 
+        "desc": "activeTimer"
+    },
+    {
+        "abbr": "atd", 
+        "desc": "attended"
+    },
+    {
+        "abbr": "attr", 
+        "desc": "attribute"
+    },
+    {
+        "abbr": "auth", 
+        "desc": "authenticate"
+    },
+    {
+        "abbr": "auth", 
+        "desc": "authentication"
+    },
+    {
+        "abbr": "avg", 
+        "desc": "average"
+    },
+    {
+        "abbr": "avl", 
+        "desc": "available"
+    },
+    {
+        "abbr": "bal", 
+        "desc": "balance"
+    },
+    {
+        "abbr": "bat", 
+        "desc": "battery"
+    },
+    {
+        "abbr": "bcd", 
+        "desc": "barcode"
+    },
+    {
+        "abbr": "bch", 
+        "desc": "batch"
+    },
+    {
+        "abbr": "bkp", 
+        "desc": "backup"
+    },
+    {
+        "abbr": "bdy", 
+        "desc": "boundary"
+    },
+    {
+        "abbr": "be", 
+        "desc": "backEnd"
+    },
+    {
+        "abbr": "bg", 
+        "desc": "background"
+    },
+    {
+        "abbr": "bin", 
+        "desc": "binary"
+    },
+    {
+        "abbr": "bkp", 
+        "desc": "breakPoint"
+    },
+    {
+        "abbr": "bkp", 
+        "desc": "backup"
+    },
+    {
+        "abbr": "bkup", 
+        "desc": "backup"
+    },
+    {
+        "abbr": "bkt", 
+        "desc": "bracket"
+    },
+    {
+        "abbr": "blk", 
+        "desc": "block"
+    },
+    {
+        "abbr": "bnd", 
+        "desc": "bind"
+    },
+    {
+        "abbr": "bnd", 
+        "desc": "bound"
+    },
+    {
+        "abbr": "bnr", 
+        "desc": "banner"
+    },
+    {
+        "abbr": "bot", 
+        "desc": "bottom"
+    },
+    {
+        "abbr": "bool", 
+        "desc": "boolean"
+    },
+    {
+        "abbr": "brk", 
+        "desc": "break"
+    },
+    {
+        "abbr": "bsp", 
+        "desc": "backspace"
+    },
+    {
+        "abbr": "btm", 
+        "desc": "bottom"
+    },
+    {
+        "abbr": "btn", 
+        "desc": "button"
+    },
+    {
+        "abbr": "buf", 
+        "desc": "buffer"
+    },
+    {
+        "abbr": "cal", 
+        "desc": "calculate"
+    },
+    {
+        "abbr": "cal", 
+        "desc": "calendar"
+    },
+    {
+        "abbr": "calc", 
+        "desc": "calculate"
+    },
+    {
+        "abbr": "cb", 
+        "desc": "callback"
+    },
+    {
+        "abbr": "cct", 
+        "desc": "circuit"
+    },
+    {
+        "abbr": "cde", 
+        "desc": "code"
+    },
+    {
+        "abbr": "cert", 
+        "desc": "certificate"
+    },
+    {
+        "abbr": "cfg", 
+        "desc": "configuration"
+    },
+    {
+        "abbr": "cfg", 
+        "desc": "configuration"
+    },
+    {
+        "abbr": "cfm", 
+        "desc": "conform"
+    },
+    {
+        "abbr": "ch", 
+        "desc": "channel"
+    },
+    {
+        "abbr": "chk", 
+        "desc": "check"
+    },
+    {
+        "abbr": "char", 
+        "desc": "character"
+    },
+    {
+        "abbr": "chr", 
+        "desc": "character"
+    },
+    {
+        "abbr": "chrstr", 
+        "desc": "characterString"
+    },
+    {
+        "abbr": "chl", 
+        "desc": "channel"
+    },
+    {
+        "abbr": "cht", 
+        "desc": "chart"
+    },
+    {
+        "abbr": "cgy", 
+        "desc": "category"
+    },
+    {
+        "abbr": "circ", 
+        "desc": "circle"
+    },
+    {
+        "abbr": "ckr", 
+        "desc": "checker"
+    },
+    {
+        "abbr": "cks", 
+        "desc": "checksum"
+    },
+    {
+        "abbr": "cle", 
+        "desc": "cycle"
+    },
+    {
+        "abbr": "clg", 
+        "desc": "catalog"
+    },
+    {
+        "abbr": "clm", 
+        "desc": "column"
+    },
+    {
+        "abbr": "cln", 
+        "desc": "clean"
+    },
+    {
+        "abbr": "clnp", 
+        "desc": "cleanUp"
+    },
+    {
+        "abbr": "clnup", 
+        "desc": "cleanUp"
+    },
+    {
+        "abbr": "clr", 
+        "desc": "clear"
+    },
+    {
+        "abbr": "clt", 
+        "desc": "client"
+    },
+    {
+        "abbr": "clu", 
+        "desc": "cluster"
+    },
+    {
+        "abbr": "cltr", 
+        "desc": "cluster"
+    },
+    {
+        "abbr": "cmd", 
+        "desc": "command"
+    },
+    {
+        "abbr": "cmp", 
+        "desc": "compare"
+    },
+    {
+        "abbr": "cmt", 
+        "desc": "commit"
+    },
+    {
+        "abbr": "cng", 
+        "desc": "congestion"
+    },
+    {
+        "abbr": "cnl", 
+        "desc": "cancel"
+    },
+    {
+        "abbr": "cnn", 
+        "desc": "connection"
+    },
+    {
+        "abbr": "cnr", 
+        "desc": "container"
+    },
+    {
+        "abbr": "cns", 
+        "desc": "constant"
+    },
+    {
+        "abbr": "cnt", 
+        "desc": "counter"
+    },
+    {
+        "abbr": "cnt", 
+        "desc": "contact"
+    },
+    {
+        "abbr": "cntl", 
+        "desc": "control"
+    },
+    {
+        "abbr": "col", 
+        "desc": "column"
+    },
+    {
+        "abbr": "col", 
+        "desc": "collect"
+    },
+    {
+        "abbr": "col", 
+        "desc": "collection"
+    },
+    {
+        "abbr": "com", 
+        "desc": "common"
+    },
+    {
+        "abbr": "concat", 
+        "desc": "concatenate"
+    },
+    {
+        "abbr": "cond", 
+        "desc": "condition"
+    },
+    {
+        "abbr": "conf", 
+        "desc": "configuration"
+    },
+    {
+        "abbr": "config", 
+        "desc": "configuration"
+    },
+    {
+        "abbr": "conn", 
+        "desc": "connection"
+    },
+    {
+        "abbr": "cont", 
+        "desc": "continue"
+    },
+    {
+        "abbr": "conv", 
+        "desc": "conversation"
+    },
+    {
+        "abbr": "col", 
+        "desc": "column"
+    },
+    {
+        "abbr": "coll", 
+        "desc": "collection"
+    },
+    {
+        "abbr": "com", 
+        "desc": "command"
+    },
+    {
+        "abbr": "com", 
+        "desc": "common"
+    },
+    {
+        "abbr": "com", 
+        "desc": "communication"
+    },
+    {
+        "abbr": "coord", 
+        "desc": "coordinate"
+    },
+    {
+        "abbr": "cos", 
+        "desc": "cosines", 
+        "domain": "generic", 
+        "constraint": "",
+        "example": ""
+    },
+    {
+        "abbr": "cpl", 
+        "desc": "complete"
+    },
+    {
+        "abbr": "cpr", 
+        "desc": "compressed"
+    },
+    {
+        "abbr": "cpt", 
+        "desc": "component"
+    },
+    {
+        "abbr": "cpy", 
+        "desc": "copy"
+    },
+    {
+        "abbr": "crdn", 
+        "desc": "credential"
+    },
+    {
+        "abbr": "crg", 
+        "desc": "charge"
+    },
+    {
+        "abbr": "crl", 
+        "desc": "corelation"
+    },
+    {
+        "abbr": "crq", 
+        "desc": "changeRequest"
+    },
+    {
+        "abbr": "crt", 
+        "desc": "create"
+    },
+    {
+        "abbr": "csl", 
+        "desc": "console"
+    },
+    {
+        "abbr": "csr", 
+        "desc": "cursor"
+    },
+    {
+        "abbr": "csum", 
+        "desc": "checksum"
+
+    },
+    {
+        "abbr": "ctrl", 
+        "desc": "control"
+    },
+    {
+        "abbr": "cst", 
+        "desc": "cost"
+    },
+    {
+        "abbr": "cst", 
+        "desc": "constraint"
+    },
+    {
+        "abbr": "ctg", 
+        "desc": "catridge"
+    },
+    {
+        "abbr": "ctl", 
+        "desc": "control"
+    },
+    {
+        "abbr": "ctlr", 
+        "desc": "controller"
+    },
+    {
+        "abbr": "ctx", 
+        "desc": "context"
+    },
+    {
+        "abbr": "cur", 
+        "desc": "current"
+    },
+    {
+        "abbr": "curr", 
+        "desc": "current"
+    },
+    {
+        "abbr": "curpwd", 
+        "desc": "currentPassword"
+    },
+    {
+        "abbr": "cvg", 
+        "desc": "coverage"
+    },
+    {
+        "abbr": "cvn", 
+        "desc": "conversion"
+    },
+    {
+        "abbr": "cvr", 
+        "desc": "cover"
+    },
+    {
+        "abbr": "cvt", 
+        "desc": "convert"
+    },
+    {
+        "abbr": "cxt", 
+        "desc": "context"
+    },
+    {
+        "abbr": "cyc", 
+        "desc": "cycle"
+    },
+    {
+        "abbr": "dat", 
+        "desc": "date"
+    },
+    {
+        "abbr": "db", 
+        "desc": "database"
+    },
+    {
+        "abbr": "dbf", 
+        "desc": "databaseFile"
+    },
+    {
+        "abbr": "dbg", 
+        "desc": "debug"
+    },
+    {
+        "abbr": "dct", 
+        "desc": "dictionary"
+    },
+    {
+        "abbr": "dcl", 
+        "desc": "declare"
+    },
+    {
+        "abbr": "dcp", 
+        "desc": "decompress"
+    },
+    {
+        "abbr": "dec", 
+        "desc": "decimal"
+    },
+    {
+        "abbr": "dec", 
+        "desc": "decrease"
+    },
+    {
+        "abbr": "def", 
+        "desc": "default"
+    },
+    {
+        "abbr": "def", 
+        "desc": "define"
+    },
+    {
+        "abbr": "del", 
+        "desc": "delete"
+    },
+    {
+        "abbr": "del", 
+        "desc": "delivery"
+    },
+    {
+        "abbr": "dep", 
+        "desc": "dependent"
+    },
+    {
+        "abbr": "dept", 
+        "desc": "department"
+    },
+    {
+        "abbr": "dest", 
+        "desc": "destination"
+    },
+    {
+        "abbr": "dev", 
+        "desc": "development"
+    },
+    {
+        "abbr": "dev", 
+        "desc": "device"
+    },
+    {
+        "abbr": "dev", 
+        "desc": "developer"
+    },
+    {
+        "abbr": "dfn", 
+        "desc": "definition"
+    },
+    {
+        "abbr": "dfn", 
+        "desc": "defind"
+    },
+    {
+        "abbr": "dft", 
+        "desc": "default"
+    },
+    {
+        "abbr": "diag", 
+        "desc": "dialogue"
+    },
+    {
+        "abbr": "diff", 
+        "desc": "difference"
+    },
+    {
+        "abbr": "dir", 
+        "desc": "directory"
+    },
+    {
+        "abbr": "dir", 
+        "desc": "direction"
+    },
+    {
+        "abbr": "dis", 
+        "desc": "disable"
+    },
+    {
+        "abbr": "disp", 
+        "desc": "display"
+    },
+    {
+        "abbr": "dlt", 
+        "desc": "delete"
+    },
+    {
+        "abbr": "dmd", 
+        "desc": "demand"
+    },
+    {
+        "abbr": "dmn", 
+        "desc": "domain"
+    },
+    {
+        "abbr": "doc", 
+        "desc": "document"
+    },
+    {
+        "abbr": "dly", 
+        "desc": "delay"
+    },
+    {
+        "abbr": "dmp", 
+        "desc": "dump"
+    },
+    {
+        "abbr": "drt", 
+        "desc": "direct"
+    },
+    {
+        "abbr": "drv", 
+        "desc": "driver"
+    },
+    {
+        "abbr": "drv", 
+        "desc": "derive"
+    },
+    {
+        "abbr": "drv", 
+        "desc": "drive"
+    },
+    {
+        "abbr": "dsb", 
+        "desc": "desable"
+    },
+    {
+        "abbr": "dsc", 
+        "desc": "descriptor"
+    },
+    {
+        "abbr": "dsc", 
+        "desc": "disconnect"
+    },
+    {
+        "abbr": "dsk", 
+        "desc": "disk"
+    },
+    {
+        "abbr": "dsp", 
+        "desc": "display"
+    },
+    {
+        "abbr": "dt", 
+        "desc": "deltaTime"
+    },
+    {
+        "abbr": "dta", 
+        "desc": "data"
+    },
+    {
+        "abbr": "dtl", 
+        "desc": "detail"
+    },
+    {
+        "abbr": "dup", 
+        "desc": "duplicate"
+    },
+    {
+        "abbr": "dvl", 
+        "desc": "developement"
+    },
+    {
+        "abbr": "dwn", 
+        "desc": "down"
+    },
+    {
+        "abbr": "dyn", 
+        "desc": "dynamic"
+    },
+    {
+        "abbr": "e", 
+        "desc": "entry"
+    },
+    {
+        "abbr": "e", 
+        "desc": "event"
+    },
+    {
+        "abbr": "edt", 
+        "desc": "edit"
+    },
+    {
+        "abbr": "edu", 
+        "desc": "education"
+    },
+    {
+        "abbr": "ejt", 
+        "desc": "eject"
+    },
+    {
+        "abbr": "elem", 
+        "desc": "element"
+    },
+    {
+        "abbr": "ely", 
+        "desc": "early"
+    },
+    {
+        "abbr": "eml", 
+        "desc": "emulate"
+    },
+    {
+        "abbr": "enb", 
+        "desc": "enable"
+    },
+    {
+        "abbr": "enc", 
+        "desc": "encode"
+    },
+    {
+        "abbr": "enr", 
+        "desc": "enrollment"
+    },
+    {
+        "abbr": "ent", 
+        "desc": "element"
+    },
+    {
+        "abbr": "ent", 
+        "desc": "entry"
+    },
+    {
+        "abbr": "ent", 
+        "desc": "enter"
+    },
+    {
+        "abbr": "en", 
+        "desc": "enable"
+    },
+    {
+        "abbr": "env", 
+        "desc": "environment"
+    },
+    {
+        "abbr": "eq", 
+        "desc": "equal"
+    },
+    {
+        "abbr": "err", 
+        "desc": "error"
+    },
+    {
+        "abbr": "esc", 
+        "desc": "escape"
+    },
+    {
+        "abbr": "est", 
+        "desc": "established"
+    },
+    {
+        "abbr": "evt", 
+        "desc": "event"
+    },
+    {
+        "abbr": "exc", 
+        "desc": "exclude"
+    },
+    {
+        "abbr": "exch", 
+        "desc": "exchange"
+    },
+    {
+        "abbr": "exd", 
+        "desc": "extend"
+    },
+    {
+        "abbr": "exe", 
+        "desc": "executable"
+    },
+    {
+        "abbr": "exec", 
+        "desc": "execute"
+    },
+    {
+        "abbr": "exn", 
+        "desc": "extension"
+    },
+    {
+        "abbr": "exp", 
+        "desc": "expire"
+    },
+    {
+        "abbr": "expr", 
+        "desc": "expression"
+    },
+    {
+        "abbr": "ext", 
+        "desc": "extension"
+    },
+    {
+        "abbr": "ext", 
+        "desc": "extract"
+    },
+    {
+        "abbr": "f", 
+        "desc": "function"
+    },
+    {
+        "abbr": "f", 
+        "desc": "file"
+    },
+    {
+        "abbr": "fac", 
+        "desc": "factory"
+    },
+    {
+        "abbr": "fcn", 
+        "desc": "function"
+    },
+    {
+        "abbr": "fig", 
+        "desc": "figure"
+    },
+    {
+        "abbr": "fle", 
+        "desc": "file"
+    },
+    {
+        "abbr": "fld", 
+        "desc": "field"
+    },
+    {
+        "abbr": "fld", 
+        "desc": "folder"
+    },
+    {
+        "abbr": "flg", 
+        "desc": "flag"
+    },
+    {
+        "abbr": "fldr", 
+        "desc": "folder"
+    },
+    {
+        "abbr": "flw", 
+        "desc": "flow"
+    },
+    {
+        "abbr": "fmt", 
+        "desc": "format"
+    },
+    {
+        "abbr": "fnc", 
+        "desc": "finance"
+    },
+    {
+        "abbr": "fp", 
+        "desc": "functionPointer"
+    },
+    {
+        "abbr": "fnt", 
+        "desc": "font"
+    },
+    {
+        "abbr": "fnt", 
+        "desc": "front"
+    },
+    {
+        "abbr": "frc", 
+        "desc": "force"
+    },
+    {
+        "abbr": "frm", 
+        "desc": "from"
+    },
+    {
+        "abbr": "frq", 
+        "desc": "frequentg"
+    },
+    {
+        "abbr": "frqnc", 
+        "desc": "frequency"
+    },
+    {
+        "abbr": "frqnt", 
+        "desc": "frequent"
+    },
+    {
+        "abbr": "frt", 
+        "desc": "front"
+    },
+    {
+        "abbr": "fst", 
+        "desc": "first"
+    },
+    {
+        "abbr": "ftr", 
+        "desc": "filter"
+    },
+    {
+        "abbr": "func", 
+        "desc": "function"
+    },
+    {
+        "abbr": "gdl", 
+        "desc": "guidline"
+    },
+    {
+        "abbr": "ge", 
+        "desc": "greaterOrEqual"
+    },
+    {
+        "abbr": "gen", 
+        "desc": "generate"
+    },
+    {
+        "abbr": "gen", 
+        "desc": "generation"
+    },
+    {
+        "abbr": "gid", 
+        "desc": "groupIdentifier"
+    },
+    {
+        "abbr": "glb", 
+        "desc": "global"
+    },
+    {
+        "abbr": "gnl", 
+        "desc": "general"
+    },
+    {
+        "abbr": "gph", 
+        "desc": "graph"
+    },
+    {
+        "abbr": "grp", 
+        "desc": "group"
+    },
+    {
+        "abbr": "grt", 
+        "desc": "grant"
+    },
+    {
+        "abbr": "gt", 
+        "desc": "greaterthan"
+    },
+    {
+        "abbr": "h", 
+        "desc": "height"
+    },
+    {
+        "abbr": "hdl", 
+        "desc": "handle"
+    },
+    {
+        "abbr": "hndl", 
+        "desc": "handle"
+    },
+    {
+        "abbr": "hdr", 
+        "desc": "header"
+    },
+    {
+        "abbr": "hdw", 
+        "desc": "hardware"
+    },
+    {
+        "abbr": "hex", 
+        "desc": "hexadecimal"
+    },
+    {
+        "abbr": "hlp", 
+        "desc": "help"
+    },
+    {
+        "abbr": "hlr", 
+        "desc": "holder"
+    },
+    {
+        "abbr": "hldr", 
+        "desc": "holder"
+    },
+    {
+        "abbr": "hor", 
+        "desc": "horizontal"
+    },
+    {
+        "abbr": "hrz", 
+        "desc": "horizontal"
+    },
+    {
+        "abbr": "hst", 
+        "desc": "history"
+    },
+    {
+        "abbr": "hw", 
+        "desc": "hardware"
+    },
+    {
+        "abbr": "i", 
+        "desc": "integer"
+    },
+    {
+        "abbr": "i", 
+        "desc": "iterator"
+    },
+    {
+        "abbr": "id", 
+        "desc": "identifier"
+    },
+    {
+        "abbr": "idl", 
+        "desc": "idle"
+    },
+    {
+        "abbr": "idx", 
+        "desc": "index"
+    },
+    {
+        "abbr": "ifc", 
+        "desc": "interface"
+    },
+    {
+        "abbr": "iface", 
+        "desc": "interface"
+    },
+    {
+        "abbr": "ign", 
+        "desc": "ignore"
+    },
+    {
+        "abbr": "igr", 
+        "desc": "ignore"
+    },
+    {
+        "abbr": "img", 
+        "desc": "image"
+    },
+    {
+        "abbr": "inac", 
+        "desc": "inactive"
+    },
+    {
+        "abbr": "inact", 
+        "desc": "inactive"
+    },
+    {
+        "abbr": "inc", 
+        "desc": "include"
+    },
+    {
+        "abbr": "inc", 
+        "desc": "increase"
+    },
+    {
+        "abbr": "inc", 
+        "desc": "increase"
+    },
+    {
+        "abbr": "incr", 
+        "desc": "increment"
+    },
+    {
+        "abbr": "ind", 
+        "desc": "indirect"
+    },
+    {
+        "abbr": "inf", 
+        "desc": "information"
+    },
+    {
+        "abbr": "info", 
+        "desc": "information"
+    },
+    {
+        "abbr": "init", 
+        "desc": "initialize"
+    },
+    {
+        "abbr": "ins", 
+        "desc": "insert"
+    },
+    {
+        "abbr": "inl", 
+        "desc": "initial"
+    },
+    {
+        "abbr": "inm", 
+        "desc": "intermediate"
+    },
+    {
+        "abbr": "inp", 
+        "desc": "input"
+    },
+    {
+        "abbr": "inq", 
+        "desc": "inquire"
+    },
+    {
+        "abbr": "ins", 
+        "desc": "install"
+    },
+    {
+        "abbr": "isl", 
+        "desc": "install"
+    },
+    {
+        "abbr": "inst", 
+        "desc": "instance"
+    },
+    {
+        "abbr": "intf", 
+        "desc": "interface"
+    },
+    {
+        "abbr": "int", 
+        "desc": "integer"
+    },
+    {
+        "abbr": "inv", 
+        "desc": "invoke"
+    },
+    {
+        "abbr": "itm", 
+        "desc": "item"
+    },
+    {
+        "abbr": "itor", 
+        "desc": "iterator"
+    },
+    {
+        "abbr": "itv", 
+        "desc": "interval"
+    },
+    {
+        "abbr": "itvl", 
+        "desc": "interval"
+    },
+    {
+        "abbr": "j", 
+        "desc": "integer"
+    },
+    {
+        "abbr": "j", 
+        "desc": "iterator"
+    },
+    {
+        "abbr": "k", 
+        "desc": "integer"
+    },
+    {
+        "abbr": "k", 
+        "desc": "iterator"
+    },
+    {
+        "abbr": "kbd", 
+        "desc": "keyBoard"
+    },
+    {
+        "abbr": "knw", 
+        "desc": "knowledge"
+    },
+    {
+        "abbr": "l", 
+        "desc": "list"
+    },
+    {
+        "abbr": "lat", 
+        "desc": "latitude"
+    },
+    {
+        "abbr": "lbl", 
+        "desc": "lable"
+    },
+    {
+        "abbr": "lcl", 
+        "desc": "local"
+    },
+    {
+        "abbr": "lck", 
+        "desc": "lock"
+    },
+    {
+        "abbr": "lib", 
+        "desc": "library"
+    },
+    {
+        "abbr": "le", 
+        "desc": "lessOrEqual"
+    },
+    {
+        "abbr": "len", 
+        "desc": "length"
+    },
+    {
+        "abbr": "lft", 
+        "desc": "left"
+    },
+    {
+        "abbr": "lgl", 
+        "desc": "logical"
+    },
+    {
+        "abbr": "ll", 
+        "desc": "linkedList"
+    },
+    {
+        "abbr": "lib", 
+        "desc": "library"
+    },
+    {
+        "abbr": "libl", 
+        "desc": "libraryList"
+    },
+    {
+        "abbr": "lin", 
+        "desc": "line"
+    },
+    {
+        "abbr": "lne", 
+        "desc": "line"
+    },
+    {
+        "abbr": "lmt", 
+        "desc": "limit"
+    },
+    {
+        "abbr": "lnk", 
+        "desc": "link"
+    },
+    {
+        "abbr": "lnr", 
+        "desc": "listener"
+    },
+    {
+        "abbr": "loc", 
+        "desc": "location"
+    },
+    {
+        "abbr": "ld", 
+        "desc": "load"
+    },
+    {
+        "abbr": "lod", 
+        "desc": "load"
+    },
+    {
+        "abbr": "lon", 
+        "desc": "longitude"
+    },
+    {
+        "abbr": "lrg", 
+        "desc": "large"
+    },
+    {
+        "abbr": "lse", 
+        "desc": "lease"
+    },
+    {
+        "abbr": "lst", 
+        "desc": "least"
+    },
+    {
+        "abbr": "lst", 
+        "desc": "list"
+    },
+    {
+        "abbr": "lst", 
+        "desc": "last"
+    },
+    {
+        "abbr": "lt", 
+        "desc": "lessThan"
+    },
+    {
+        "abbr": "ltr", 
+        "desc": "letter"
+    },
+    {
+        "abbr": "lvl", 
+        "desc": "level"
+    },
+    {
+        "abbr": "maj", 
+        "desc": "majore"
+    },
+    {
+        "abbr": "max", 
+        "desc": "maximum"
+    },
+    {
+        "abbr": "mbr", 
+        "desc": "member"
+    },
+    {
+        "abbr": "mch", 
+        "desc": "machine"
+    },
+    {
+        "abbr": "mcn", 
+        "desc": "machine"
+    },
+    {
+        "abbr": "mcu", 
+        "desc": "microcontroller"
+    },
+    {
+        "abbr": "mdl", 
+        "desc": "model"
+    },
+    {
+        "abbr": "mdl", 
+        "desc": "middle"
+    },
+    {
+        "abbr": "mdl", 
+        "desc": "module"
+    },
+    {
+        "abbr": "mdm", 
+        "desc": "modem"
+    },
+    {
+        "abbr": "med", 
+        "desc": "media"
+    },
+    {
+        "abbr": "med", 
+        "desc": "medium"
+    },
+    {
+        "abbr": "mem", 
+        "desc": "memory"
+    },
+    {
+        "abbr": "meta", 
+        "desc": "metadata"
+    },
+    {
+        "abbr": "mfr", 
+        "desc": "manufacturer"
+    },
+    {
+        "abbr": "mgr", 
+        "desc": "manager"
+    },
+    {
+        "abbr": "mgt", 
+        "desc": "management"
+    },
+    {
+        "abbr": "mid", 
+        "desc": "middle"
+    },
+    {
+        "abbr": "min", 
+        "desc": "minimum"
+    },
+    {
+        "abbr": "misc", 
+        "desc": "miscellaneous"
+    },
+    {
+        "abbr": "mlt", 
+        "desc": "multiplier"
+    },
+    {
+        "abbr": "mng", 
+        "desc": "manager"
+    },
+    {
+        "abbr": "mng", 
+        "desc": "manage"
+    },
+    {
+        "abbr": "mnt", 
+        "desc": "mount"
+    },
+    {
+        "abbr": "mnu", 
+        "desc": "menu"
+    },
+    {
+        "abbr": "mntr", 
+        "desc": "monitor"
+    },
+    {
+        "abbr": "mod", 
+        "desc": "modulo"
+    },
+    {
+        "abbr": "mon", 
+        "desc": "monitor"
+    },
+    {
+        "abbr": "mrg", 
+        "desc": "merge"
+    },
+    {
+        "abbr": "mrk", 
+        "desc": "mark"
+    },
+    {
+        "abbr": "msg", 
+        "desc": "message"
+    },
+    {
+        "abbr": "msr", 
+        "desc": "measure"
+    },
+    {
+        "abbr": "mst", 
+        "desc": "master"
+    },
+    {
+        "abbr": "mtd", 
+        "desc": "mounted"
+    },
+    {
+        "abbr": "mtd", 
+        "desc": "method"
+    },
+    {
+        "abbr": "mth", 
+        "desc": "method"
+    },
+    {
+        "abbr": "mut", 
+        "desc": "mutable"
+    },
+    {
+        "abbr": "n", 
+        "desc": "not"
+    },
+    {
+        "abbr": "nm", 
+        "desc": "name"
+    },
+    {
+        "abbr": "nam", 
+        "desc": "name"
+    },
+    {
+        "abbr": "nbr", 
+        "desc": "number"
+    },
+    {
+        "abbr": "nav", 
+        "desc": "navigation"
+    }, 
+    {
+        "abbr": "nbr", 
+        "desc": "neighbor"
+    }, 
+    {
+        "abbr": "nd", 
+        "desc": "node"
+    },
+    {
+        "abbr": "nde", 
+        "desc": "node"
+    },
+    {
+        "abbr": "ne", 
+        "desc": "notEqual"
+    },
+    {
+        "abbr": "net", 
+        "desc": "network"
+    },
+    {
+        "abbr": "nfy", 
+        "desc": "notify"
+    },
+    {
+        "abbr": "ngh", 
+        "desc": "neighbor"
+    },
+    {
+        "abbr": "nml", 
+        "desc": "nameList"
+    },
+    {
+        "abbr": "nod", 
+        "desc": "node"
+    },
+    {
+        "abbr": "ndl", 
+        "desc": "nodeList"
+    },
+    {
+        "abbr": "nl", 
+        "desc": "newline"
+    },
+    {
+        "abbr": "num", 
+        "desc": "number"
+    },
+    {
+        "abbr": "ntc", 
+        "desc": "notice"
+    },
+    {
+        "abbr": "nty", 
+        "desc": "notify"
+    },
+    {
+        "abbr": "nxt", 
+        "desc": "next"
+    },
+    {
+        "abbr": "obj", 
+        "desc": "object"
+    },
+    {
+        "abbr": "ok", 
+        "desc": "success"
+    },
+    {
+        "abbr": "op", 
+        "desc": "operation"
+    },
+    {
+        "abbr": "opn", 
+        "desc": "open"
+    },
+    {
+        "abbr": "opr", 
+        "desc": "operator"
+    },
+    {
+        "abbr": "opt", 
+        "desc": "option"
+    },
+    {
+        "abbr": "opt", 
+        "desc": "optional"
+    },
+    {
+        "abbr": "opt", 
+        "desc": "optical"
+    },
+    {
+        "abbr": "optm", 
+        "desc": "optimum"
+    },
+    {
+        "abbr": "odr", 
+        "desc": "order"
+    },
+    {
+        "abbr": "os", 
+        "desc": "operatingSystem"
+    },
+    {
+        "abbr": "ovf", 
+        "desc": "overflow"
+    },
+    {
+        "abbr": "ovl", 
+        "desc": "overlay"
+    },
+    {
+        "abbr": "ovr", 
+        "desc": "overide"
+    },
+    {
+        "abbr": "p", 
+        "desc": "pointer"
+    },
+    {
+        "abbr": "pag", 
+        "desc": "page"
+    },
+    {
+        "abbr": "prm", 
+        "desc": "parameter"
+    },
+    {
+        "abbr": "parm", 
+        "desc": "parameter"
+    },
+    {
+        "abbr": "param", 
+        "desc": "parameter"
+    },
+    {
+        "abbr": "pbl", 
+        "desc": "portable"
+    },
+    {
+        "abbr": "pcl", 
+        "desc": "protocol"
+    },
+    {
+        "abbr": "pct", 
+        "desc": "percent"
+    },
+    {
+        "abbr": "pcy", 
+        "desc": "policy"
+    },
+    {
+        "abbr": "perf", 
+        "desc": "performance"
+    },
+    {
+        "abbr": "pfx", 
+        "desc": "prefix"
+    },
+    {
+        "abbr": "phs", 
+        "desc": "phase"
+    },
+    {
+        "abbr": "pic", 
+        "desc": "picture"
+    },
+    {
+        "abbr": "pkg", 
+        "desc": "package"
+    },
+    {
+        "abbr": "pkt", 
+        "desc": "packet"
+    },
+    {
+        "abbr": "plc", 
+        "desc": "place"
+    },
+    {
+        "abbr": "plcy", 
+        "desc": "policy"
+    },
+    {
+        "abbr": "plt", 
+        "desc": "plotter"
+    },
+    {
+        "abbr": "pmn", 
+        "desc": "permission"
+    },
+    {
+        "abbr": "pmt", 
+        "desc": "prompt"
+    },
+    {
+        "abbr": "pnd", 
+        "desc": "pending"
+    },
+    {
+        "abbr": "pnl", 
+        "desc": "panel"
+    },
+    {
+        "abbr": "pnt", 
+        "desc": "point"
+    },
+    {
+        "abbr": "pos", 
+        "desc": "position"
+    },
+    {
+        "abbr": "pred", 
+        "desc": "prediction"
+    },
+    {
+        "abbr": "pref", 
+        "desc": "preference"
+    },
+    {
+        "abbr": "prb", 
+        "desc": "problem"
+    },
+    {
+        "abbr": "prc", 
+        "desc": "process"
+    },
+    {
+        "abbr": "prd", 
+        "desc": "product"
+    },
+    {
+        "abbr": "prev", 
+        "desc": "previous"
+    },
+    {
+        "abbr": "prf", 
+        "desc": "profile"
+    },
+    {
+        "abbr": "pri", 
+        "desc": "primary"
+    },
+    {
+        "abbr": "prj", 
+        "desc": "project"
+    },
+    {
+        "abbr": "prl", 
+        "desc": "parellel"
+    },
+    {
+        "abbr": "prm", 
+        "desc": "promote"
+    },
+    {
+        "abbr": "prn", 
+        "desc": "parent"
+    },
+    {
+        "abbr": "prn", 
+        "desc": "person"
+    },
+    {
+        "abbr": "proc", 
+        "desc": "process"
+    },
+    {
+        "abbr": "prod", 
+        "desc": "production"
+    },
+    {
+        "abbr": "prof", 
+        "desc": "profiler"
+    },
+    {
+        "abbr": "prt", 
+        "desc": "print"
+    },
+    {
+        "abbr": "prtl", 
+        "desc": "protocol"
+    },
+    {
+        "abbr": "prv", 
+        "desc": "previous"
+    },
+    {
+        "abbr": "prx", 
+        "desc": "proxy"
+    },
+    {
+        "abbr": "ptc", 
+        "desc": "protection"
+    },
+    {
+        "abbr": "pth", 
+        "desc": "path"
+    },
+    {
+        "abbr": "ptl", 
+        "desc": "partial"
+    },
+    {
+        "abbr": "ptn", 
+        "desc": "partition"
+    },
+    {
+        "abbr": "ptr", 
+        "desc": "printer"
+    },
+    {
+        "abbr": "ptr", 
+        "desc": "pointer"
+    },
+    {
+        "abbr": "pty", 
+        "desc": "priority"
+    },
+    {
+        "abbr": "pub", 
+        "desc": "public"
+    },
+    {
+        "abbr": "pvd", 
+        "desc": "provider"
+    },
+    {
+        "abbr": "pvdr", 
+        "desc": "provider"
+    },
+    {
+        "abbr": "pvt", 
+        "desc": "private"
+    },
+    {
+        "abbr": "pvy", 
+        "desc": "privacy"
+    },
+    {
+        "abbr": "pwd", 
+        "desc": "password"
+    },
+    {
+        "abbr": "pwr", 
+        "desc": "power"
+    },
+    {
+        "abbr": "px", 
+        "desc": "pixel"
+    },
+    {
+        "abbr": "q", 
+        "desc": "queue"
+    },
+    {
+        "abbr": "q", 
+        "desc": "query"
+    },
+    {
+        "abbr": "qlty", 
+        "desc": "quality"
+    },
+    {
+        "abbr": "qry", 
+        "desc": "query"
+    },
+    {
+        "abbr": "qst", 
+        "desc": "question"
+    },
+    {
+        "abbr": "r", 
+        "desc": "radius"
+    },
+    {
+        "abbr": "rand", 
+        "desc": "random"
+    },
+    {
+        "abbr": "rbd", 
+        "desc": "rebuild"
+    },
+    {
+        "abbr": "rec", 
+        "desc": "record"
+    },
+    {
+        "abbr": "rcd", 
+        "desc": "record"
+    },
+    {
+        "abbr": "rcl", 
+        "desc": "reclaim"
+    },
+    {
+        "abbr": "rcp", 
+        "desc": "recipient"
+    },
+    {
+        "abbr": "rcr", 
+        "desc": "recursion"
+    },
+    {
+        "abbr": "rcv", 
+        "desc": "receive"
+    },
+    {
+        "abbr": "rcv", 
+        "desc": "recovery"
+    },
+    {
+        "abbr": "rcry", 
+        "desc": "recovery"
+    },
+    {
+        "abbr": "rect", 
+        "desc": "rectangle"
+    },
+    {
+        "abbr": "rdr", 
+        "desc": "reader"
+    },
+    {
+        "abbr": "react", 
+        "desc": "reActivate"
+    },
+    {
+        "abbr": "rec", 
+        "desc": "recieve"
+    },
+    {
+        "abbr": "rand", 
+        "desc": "random"
+    },
+    {
+        "abbr": "recnn", 
+        "desc": "reconnect"
+    },
+    {
+        "abbr": "recv", 
+        "desc": "receive"
+    },
+    {
+        "abbr": "ref", 
+        "desc": "reference"
+    },
+    {
+        "abbr": "regex", 
+        "desc": "regularExpression"
+    },
+    {
+        "abbr": "reinz", 
+        "desc": "reinitialize"
+    },
+    {
+        "abbr": "rel", 
+        "desc": "relation"
+    },
+    {
+        "abbr": "rel", 
+        "desc": "release"
+    },
+    {
+        "abbr": "rem", 
+        "desc": "remove"
+    },
+    {
+        "abbr": "rep", 
+        "desc": "representate"
+    },
+    {
+        "abbr": "repo", 
+        "desc": "repository"
+    },
+    {
+        "abbr": "req", 
+        "desc": "required"
+    },
+    {
+        "abbr": "req", 
+        "desc": "requested"
+    },
+    {
+        "abbr": "res", 
+        "desc": "resident"
+    },
+    {
+        "abbr": "res", 
+        "desc": "resolution"
+    },
+    {
+        "abbr": "res", 
+        "desc": "response"
+    },
+    {
+        "abbr": "res", 
+        "desc": "result"
+    },
+    {
+        "abbr": "resync", 
+        "desc": "resynchronize"
+    },
+    {
+        "abbr": "ret", 
+        "desc": "return"
+    },
+    {
+        "abbr": "ret", 
+        "desc": "retention"
+    },
+    {
+        "abbr": "rev", 
+        "desc": "revision"
+    },
+    {
+        "abbr": "rfs", 
+        "desc": "refuse"
+    },
+    {
+        "abbr": "rgs", 
+        "desc": "registration"
+    },
+    {
+        "abbr": "rgx", 
+        "desc": "regularExpression"
+    },
+    {
+        "abbr": "rgt", 
+        "desc": "right"
+    },
+    {
+        "abbr": "rgz", 
+        "desc": "recognize"
+    },
+    {
+        "abbr": "rgz", 
+        "desc": "reorganize"
+    },
+    {
+        "abbr": "rgt", 
+        "desc": "reject"
+    },
+    {
+        "abbr": "rls", 
+        "desc": "release"
+    },
+    {
+        "abbr": "rly", 
+        "desc": "reply"
+    },
+    {
+        "abbr": "rmd", 
+        "desc": "remind"
+    },
+    {
+        "abbr": "rmt", 
+        "desc": "remote"
+    },
+    {
+        "abbr": "rmv", 
+        "desc": "remove"
+    },
+    {
+        "abbr": "rng", 
+        "desc": "range"
+    },
+    {
+        "abbr": "rnm", 
+        "desc": "rename"
+    },
+    {
+        "abbr": "rpl", 
+        "desc": "replace"
+    },
+    {
+        "abbr": "rpl", 
+        "desc": "reply"
+    },
+    {
+        "abbr": "rpt", 
+        "desc": "report"
+    },
+    {
+        "abbr": "rpy", 
+        "desc": "reply"
+    },
+    {
+        "abbr": "rqd", 
+        "desc": "required"
+    },
+    {
+        "abbr": "rqs", 
+        "desc": "request"
+    },
+    {
+        "abbr": "rqst", 
+        "desc": "request"
+    },
+    {
+        "abbr": "rrt", 
+        "desc": "reroute"
+    },
+    {
+        "abbr": "rsb", 
+        "desc": "reassembly"
+    },
+    {
+        "abbr": "res", 
+        "desc": "resource"
+    },
+    {
+        "abbr": "rsl", 
+        "desc": "result"
+    },
+    {
+        "abbr": "rls", 
+        "desc": "resolution"
+    },
+    {
+        "abbr": "rsm", 
+        "desc": "resume"
+    },
+    {
+        "abbr": "rsp", 
+        "desc": "response"
+    },
+    {
+        "abbr": "rsrc", 
+        "desc": "resource"
+    },
+    {
+        "abbr": "rst", 
+        "desc": "result"
+    },
+    {
+        "abbr": "rst", 
+        "desc": "restore"
+    },
+    {
+        "abbr": "rstd", 
+        "desc": "restricted"
+    },
+    {
+        "abbr": "rte", 
+        "desc": "route"
+    },
+    {
+        "abbr": "rtg", 
+        "desc": "routing"
+    },
+    {
+        "abbr": "rtng", 
+        "desc": "routing"
+    },
+    {
+        "abbr": "rtl", 
+        "desc": "retail"
+    },
+    {
+        "abbr": "rtm", 
+        "desc": "retransmit"
+    },
+    {
+        "abbr": "rtn", 
+        "desc": "return"
+    },
+    {
+        "abbr": "rtn", 
+        "desc": "retransmission"
+    },
+    {
+        "abbr": "rtr", 
+        "desc": "router"
+    },
+    {
+        "abbr": "rtt", 
+        "desc": "rotate"
+    },
+    {
+        "abbr": "rtv", 
+        "desc": "retrieve"
+    },
+    {
+        "abbr": "rty", 
+        "desc": "retry"
+    },
+    {
+        "abbr": "rvk", 
+        "desc": "revoke"
+    },
+    {
+        "abbr": "rvs", 
+        "desc": "reverse"
+    },
+    {
+        "abbr": "s", 
+        "desc": "variable"
+    },
+    {
+        "abbr": "sadl", 
+        "desc": "saddle"
+    },
+    {
+        "abbr": "sav", 
+        "desc": "save"
+    },
+    {
+        "abbr": "savf", 
+        "desc": "saveFile"
+    },
+    {
+        "abbr": "savfle", 
+        "desc": "saveFile"
+    },
+    {
+        "abbr": "sbm", 
+        "desc": "submit"
+    },
+    {
+        "abbr": "sbs", 
+        "desc": "subsystem"
+    },
+    {
+        "abbr": "scd", 
+        "desc": "schedule"
+    },
+    {
+        "abbr": "sch", 
+        "desc": "search"
+    },
+    {
+        "abbr": "scn", 
+        "desc": "screen"
+    },
+    {
+        "abbr": "sct", 
+        "desc": "sector"
+    },
+    {
+        "abbr": "sctr", 
+        "desc": "sector"
+    },
+    {
+        "abbr": "sdl", 
+        "desc": "saddle"
+    },
+    {
+        "abbr": "sec", 
+        "desc": "second"
+    },
+    {
+        "abbr": "sec", 
+        "desc": "secure"
+    },
+    {
+        "abbr": "sec", 
+        "desc": "security"
+    },
+    {
+        "abbr": "sem", 
+        "desc": "semaphore"
+    },
+    {
+        "abbr": "seg", 
+        "desc": "segment"
+    },
+    {
+        "abbr": "sel", 
+        "desc": "selected"
+    },
+    {
+        "abbr": "sel", 
+        "desc": "selection"
+    },
+    {
+        "abbr": "sep", 
+        "desc": "seperate"
+    },
+    {
+        "abbr": "seq", 
+        "desc": "sequence"
+    },
+    {
+        "abbr": "sev", 
+        "desc": "sevirity"
+    },
+    {
+        "abbr": "sfw", 
+        "desc": "software"
+    },
+    {
+        "abbr": "sgn", 
+        "desc": "sign"
+    },
+    {
+        "abbr": "shd", 
+        "desc": "shadow"
+    },
+    {
+        "abbr": "shf", 
+        "desc": "shift"
+    },
+    {
+        "abbr": "shft", 
+        "desc": "shift"
+    },
+    {
+        "abbr": "shr", 
+        "desc": "shared"
+    },
+    {
+        "abbr": "sig", 
+        "desc": "signature"
+    },
+    {
+        "abbr": "sin", 
+        "desc": "sine"
+    },
+    {
+        "abbr": "slr", 
+        "desc": "selector"
+    },
+    {
+        "abbr": "slt", 
+        "desc": "selection"
+    },
+    {
+        "abbr": "smg", 
+        "desc": "systemManager"
+    },
+    {
+        "abbr": "smy", 
+        "desc": "summary"
+    },
+    {
+        "abbr": "smry", 
+        "desc": "summary"
+    },
+    {
+        "abbr": "snd", 
+        "desc": "send"
+    },
+    {
+        "abbr": "sng", 
+        "desc": "single"
+    },
+    {
+        "abbr": "snp", 
+        "desc": "snap"
+    },
+    {
+        "abbr": "spc", 
+        "desc": "space"
+    },
+    {
+        "abbr": "spc", 
+        "desc": "special"
+    },
+    {
+        "abbr": "spd", 
+        "desc": "supplied"
+    },
+    {
+        "abbr": "spld", 
+        "desc": "supplied"
+    },
+    {
+        "abbr": "spf", 
+        "desc": "specific"
+    },
+    {
+        "abbr": "spl", 
+        "desc": "spool"
+    },
+    {
+        "abbr": "spt", 
+        "desc": "support"
+    },
+    {
+        "abbr": "sqrt", 
+        "desc": "squareRoot"
+    },
+    {
+        "abbr": "src", 
+        "desc": "source"
+    },
+    {
+        "abbr": "srch", 
+        "desc": "search"
+    },
+    {
+        "abbr": "srn", 
+        "desc": "screen"
+    },
+    {
+        "abbr": "srt", 
+        "desc": "sort"
+    },
+    {
+        "abbr": "srv", 
+        "desc": "service"
+    },
+    {
+        "abbr": "ssn", 
+        "desc": "session"
+    },
+    {
+        "abbr": "ssp", 
+        "desc": "suspend"
+    },
+    {
+        "abbr": "stat", 
+        "desc": "statistics"
+    },
+    {
+        "abbr": "stc", 
+        "desc": "statistics"
+    },
+    {
+        "abbr": "std", 
+        "desc": "standard"
+    },
+    {
+        "abbr": "stg", 
+        "desc": "storage"
+    },
+    {
+        "abbr": "stk", 
+        "desc": "stack"
+    },
+    {
+        "abbr": "stm", 
+        "desc": "stream"
+    },
+    {
+        "abbr": "stmf", 
+        "desc": "streamFile"
+    },
+    {
+        "abbr": "stmt", 
+        "desc": "statement"
+    },
+    {
+        "abbr": "stn", 
+        "desc": "station"
+    },
+    {
+        "abbr": "stp", 
+        "desc": "step"
+    },
+    {
+        "abbr": "stpl", 
+        "desc": "staple"
+    },
+    {
+        "abbr": "str", 
+        "desc": "string"
+    },
+    {
+        "abbr": "str", 
+        "desc": "start"
+    },
+    {
+        "abbr": "sts", 
+        "desc": "status"
+    },
+    {
+        "abbr": "stt", 
+        "desc": "state"
+    },
+    {
+        "abbr": "stt", 
+        "desc": "static"
+    },
+    {
+        "abbr": "strg", 
+        "desc": "storage"
+    },
+    {
+        "abbr": "strm", 
+        "desc": "stream"
+    },
+    {
+        "abbr": "sub", 
+        "desc": "subject"
+    },
+    {
+        "abbr": "subadr", 
+        "desc": "subAddress"
+    },
+    {
+        "abbr": "subaloc", 
+        "desc": "subAllocation"
+    },
+    {
+        "abbr": "subdir", 
+        "desc": "subDirectory"
+    },
+    {
+        "abbr": "subflr", 
+        "desc": "subFolder"
+    },
+    {
+        "abbr": "subpgm", 
+        "desc": "subProgram"
+    },
+    {
+        "abbr": "subr", 
+        "desc": "subRoutine"
+    },
+    {
+        "abbr": "subst", 
+        "desc": "substitution"
+    },
+    {
+        "abbr": "succ", 
+        "desc": "successor"
+    },
+    {
+        "abbr": "sup", 
+        "desc": "suppression"
+    },
+    {
+        "abbr": "svr", 
+        "desc": "server"
+    },
+    {
+        "abbr": "sws", 
+        "desc": "switches"
+    },
+    {
+        "abbr": "swt", 
+        "desc": "switch"
+    },
+    {
+        "abbr": "sym", 
+        "desc": "symbol"
+    },
+    {
+        "abbr": "syn", 
+        "desc": "syntaxt"
+    },
+    {
+        "abbr": "sync", 
+        "desc": "synchronize"
+    },
+    {
+        "abbr": "sys", 
+        "desc": "system"
+    },
+    {
+        "abbr": "t", 
+        "desc": "time"
+    },
+    {
+        "abbr": "t", 
+        "desc": "type"
+    },
+    {
+        "abbr": "tbl", 
+        "desc": "table"
+    },
+    {
+        "abbr": "tel", 
+        "desc": "telephone"
+    },
+    {
+        "abbr": "temp", 
+        "desc": "temperature"
+    },
+    {
+        "abbr": "temp", 
+        "desc": "temporary"
+    },
+    {
+        "abbr": "term", 
+        "desc": "terminal"
+    },
+    {
+        "abbr": "tfr", 
+        "desc": "transfer"
+    },
+    {
+        "abbr": "tgt", 
+        "desc": "target"
+    },
+    {
+        "abbr": "thd", 
+        "desc": "thread"
+    },
+    {
+        "abbr": "thrd", 
+        "desc": "thread"
+    },
+    {
+        "abbr": "thld", 
+        "desc": "threshold"
+    },
+    {
+        "abbr": "thr", 
+        "desc": "through"
+    },
+    {
+        "abbr": "ths", 
+        "desc": "thesaurus"
+    },
+    {
+        "abbr": "tim", 
+        "desc": "time"
+    },
+    {
+        "abbr": "tkn", 
+        "desc": "token"
+    },
+    {
+        "abbr": "tkv", 
+        "desc": "takeover"
+    },
+    {
+        "abbr": "tkv", 
+        "desc": "takeover"
+    },
+    {
+        "abbr": "tm", 
+        "desc": "time"
+    },
+    {
+        "abbr": "tme", 
+        "desc": "time"
+    },
+    {
+        "abbr": "tmeot", 
+        "desc": "timeout"
+    },
+    {
+        "abbr": "tmn", 
+        "desc": "transmission"
+    },
+    {
+        "abbr": "tmp", 
+        "desc": "temporary"
+    },
+    {
+        "abbr": "tmpl", 
+        "desc": "template"
+    },
+    {
+        "abbr": "tml", 
+        "desc": "terminal"
+    },
+    {
+        "abbr": "tmr", 
+        "desc": "timer"
+    },
+    {
+        "abbr": "tms", 
+        "desc": "transmission"
+    },
+    {
+        "abbr": "tmt", 
+        "desc": "transmit"
+    },
+    {
+        "abbr": "tns", 
+        "desc": "transmit"
+    },
+    {
+        "abbr": "tokn", 
+        "desc": "token"
+    },
+    {
+        "abbr": "tot", 
+        "desc": "total"
+    },
+    {
+        "abbr": "tpe", 
+        "desc": "type"
+    },
+    
+    {
+        "abbr": "tpl", 
+        "desc": "template"
+    },
+    {
+        "abbr": "tpl", 
+        "desc": "topology"
+    },
+    {
+        "abbr": "tpt", 
+        "desc": "transport"
+    },
+    {
+        "abbr": "tql", 
+        "desc": "toggle"
+    },
+    {
+        "abbr": "trc", 
+        "desc": "trace"
+    },
+    {
+        "abbr": "trg", 
+        "desc": "trigger"
+    },
+    {
+        "abbr": "trm", 
+        "desc": "term"
+    },
+    {
+        "abbr": "trp", 
+        "desc": "trap"
+    },
+    {
+        "abbr": "trs", 
+        "desc": "transit"
+    },
+    {
+        "abbr": "ts", 
+        "desc": "timestamp"
+    },
+    {
+        "abbr": "tsp", 
+        "desc": "timestamp"
+    },
+    {
+        "abbr": "tsk", 
+        "desc": "task"
+    },
+    {
+        "abbr": "tsprt", 
+        "desc": "transport"
+    },
+    {
+        "abbr": "tst", 
+        "desc": "transport"
+    },
+    {
+        "abbr": "tst", 
+        "desc": "test"
+    },
+    {
+        "abbr": "ttl", 
+        "desc": "total"
+    },
+    {
+        "abbr": "txt", 
+        "desc": "text"
+    },
+    {
+        "abbr": "typ", 
+        "desc": "type"
+    },
+    {
+        "abbr": "twr", 
+        "desc": "tower"
+    },
+    {
+        "abbr": "tz", 
+        "desc": "timezone"
+    },
+    {
+        "abbr": "u", 
+        "desc": "variable"
+    },
+    {
+        "abbr": "ui", 
+        "desc": "userInterface"
+    },
+    {
+        "abbr": "ul", 
+        "desc": "upload"
+    },
+    {
+        "abbr": "unl", 
+        "desc": "unlink"
+    },
+    {
+        "abbr": "ung", 
+        "desc": "unique"
+    },
+    {
+        "abbr": "upd", 
+        "desc": "update"
+    },
+    {
+        "abbr": "upld", 
+        "desc": "upload"
+    },
+    {
+        "abbr": "usr", 
+        "desc": "user"
+    },
+    {
+        "abbr": "upg", 
+        "desc": "upgrade"
+    },
+    {
+        "abbr": "usg", 
+        "desc": "usage"
+    },
+    {
+        "abbr": "usr", 
+        "desc": "user"
+    },
+    {
+        "abbr": "utl", 
+        "desc": "utility"
+    },
+    {
+        "abbr": "util", 
+        "desc": "utility"
+    },
+    {
+        "abbr": "v", 
+        "desc": "value"
+    },
+    {
+        "abbr": "val", 
+        "desc": "value"
+    },
+    {
+        "abbr": "var", 
+        "desc": "variable"
+    },
+    {
+        "abbr": "vec", 
+        "desc": "vector"
+    },
+    {
+        "abbr": "ver", 
+        "desc": "version"
+    },
+    {
+        "abbr": "ver", 
+        "desc": "vertical"
+    },
+    {
+        "abbr": "versn", 
+        "desc": "version"
+    },
+    {
+        "abbr": "vfy", 
+        "desc": "verify"
+    },
+    {
+        "abbr": "vld", 
+        "desc": "valid"
+    },
+    {
+        "abbr": "vld", 
+        "desc": "validate"
+    },
+    {
+        "abbr": "vlm", 
+        "desc": "volume"
+    },
+    {
+        "abbr": "vnd", 
+        "desc": "vendor"
+    },
+    {
+        "abbr": "vol", 
+        "desc": "volume"
+    },
+    {
+        "abbr": "vrf", 
+        "desc": "verification"
+    },
+    {
+        "abbr": "vrt", 
+        "desc": "virtual"
+    },
+    {
+        "abbr": "vrtl", 
+        "desc": "virtual"
+    },
+    {
+        "abbr": "vsn", 
+        "desc": "version"
+    },
+    {
+        "abbr": "w", 
+        "desc": "width"
+    },
+    {
+        "abbr": "wch", 
+        "desc": "watch"
+    },
+    {
+        "abbr": "wdw", 
+        "desc": "window"
+    },
+    {
+        "abbr": "win", 
+        "desc": "window"
+    },
+    {
+        "abbr": "wk", 
+        "desc": "week"
+    },
+    {
+        "abbr": "wrd", 
+        "desc": "word"
+    },
+    {
+        "abbr": "wrk", 
+        "desc": "work"
+    },
+    {
+        "abbr": "wrt", 
+        "desc": "write" 
+   	},
+    {
+        "abbr": "ws", 
+        "desc": "whiteSpace"
+    },
+    {
+        "abbr": "ws", 
+        "desc": "workstation"
+    },
+    {
+        "abbr": "wtr", 
+        "desc": "writer" 
+    },
+    {
+        "abbr": "y", 
+        "desc": "yes"
+    }
+]}

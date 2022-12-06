@@ -1,0 +1,22 @@
+package com.iitm.raj.hello;
+
+import java.io.FileReader;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.*;
+import org.json.simple.JSONArray;
+
+public class JSONParserForAbbreviation {
+	public static String wordForAbbreviation(String str) {
+		JSONParser parser = new JSONParser();
+	    try {
+	    	Object obj = parser.parse(new FileReader("JSONExample.json"));
+	       JSONObject jsonObject = (JSONObject)obj;
+	       
+	    } catch(Exception e) {
+	        e.printStackTrace();
+	     }
+		return str;
+	}
+	
+	
+}

@@ -39,7 +39,7 @@ public class ASTReader {
  
 			public boolean visit(MethodDeclaration node) {
 				SimpleName name1 = node.getName();
-			    names.add(name1.getIdentifier().toString()+"()");
+			    names.add(name1.getIdentifier().toString());
 			   // System.out.println(name1.toString()+"()");
 			    return super.visit(node);
 			  }

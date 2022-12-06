@@ -10,17 +10,17 @@ class DictWordChecker {
 	
 	
 	
-    public static boolean check_for_word(String word) {
+    public static boolean check_for_word(StringBuilder word) {
     	
         try {
         	FileInputStream fis= new FileInputStream(new File("E:\\eclipse\\com.iitm.raj.hello\\Data\\words_alpha.txt"));
         	BufferedReader br = new BufferedReader(new InputStreamReader(fis));
             
             String str;
-            
             while ((str = br.readLine()) != null) {
+            	StringBuilder strb = new StringBuilder(str);
             	TernarySearchTree tst = new TernarySearchTree();
-            	tst.insert(str); 
+            	tst.insert(strb); 
             	
                 if (tst.search(word) == true) {
                     return true;
@@ -36,7 +36,8 @@ class DictWordChecker {
     }
 
     public static void main(String[] args) {
-        System.out.println(check_for_word("apple"));
+    	StringBuilder str = new StringBuilder("Sort");
+        System.out.println(check_for_word(str));
         
 		}
     }

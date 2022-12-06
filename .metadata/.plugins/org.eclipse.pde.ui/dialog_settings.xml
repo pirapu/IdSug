@@ -33,4 +33,6 @@
 			<item key="create_unimplemented" value="true"/>
 		</section>
 	</section>
+	<section name="UpdateBuildpathWizard">
+	</section>
 </section>

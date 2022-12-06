@@ -1,0 +1,71 @@
+package com.iitm.raj.hello;
+
+import java.io.IOException;
+import java.util.*;
+
+
+class JaccardCoeficient
+{
+	
+  // Function to return the intersection set of s1 and s2
+  static HashSet<String> intersection(Set<String> set1, Set<String> set2)
+  {
+ 
+    // Find the intersection of the two sets
+    HashSet<String> intersect = new HashSet<String>();
+    for (String elem : set1)
+    {
+      if (set2.contains(elem))
+        intersect.add(elem);
+    }
+ 
+    return intersect;
+  }
+ 
+  // Function to return the Jaccard index of two sets
+  static double jaccard_index(Set<String> set1, Set<String> set2)
+  {
+    // Sizes of both the sets
+    int size_s1 = set1.size();
+    int size_s2 = set2.size();
+ 
+    // Get the intersection set
+    HashSet<String> intersect = intersection(set1, set2);
+ 
+    // Size of the intersection set
+    int size_in = intersect.size();
+ 
+    // Calculate the Jaccard index using the formula J(A,B) = |A∩B|/|A∪B|
+    double jaccard_in  = (double)size_in / (double)(size_s1 + size_s2 - size_in);
+ 
+    // Return the Jaccard index
+    return jaccard_in;
+  }
+ 
+  @SuppressWarnings("static-access")
+public static void main(String[] args) throws IOException
+  {
+	  NGram ng = new NGram();
+	  Set<String> sugWrdList = new HashSet<>();
+	  Set<String> grams = (Set<String>) ng.getGrams("wrd", 2);
+	  Map<String, Set<String>> pstList = ng.postList("wrd", 2);
+		for(String key : pstList.keySet()) {
+			Set<String> values = (Set<String>) pstList.get(key);
+			for(String value : values) {
+				Set<String> gramsOfValue = (Set<String>) ng.getGrams(value, 2);
+				double jIndex = jaccard_index(grams, gramsOfValue);
+				if(jIndex >= 0.2) {
+					sugWrdList.add(value);
+				}
+			}
+		}
+		
+		for(String strSug : sugWrdList) {
+			System.out.println(strSug);
+		}
+ 
+    // Print the Jaccard index and Jaccard distance
+    //System.out.println("Jaccard index = " + jaccardIndex);
+    
+  }
+}

@@ -1,5 +1,6 @@
 package com.iitm.raj.hello;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.core.commands.AbstractHandler;
@@ -39,20 +40,21 @@ public class HelloHandler extends AbstractHandler {
 		String message2 = "";
 		CamelExplicitSplitter ces = new CamelExplicitSplitter();
 		ces.idfyIdentifiers(url);
-		Set<String> str1 = ces.splitNames;
-		Set<String> str2 = ces.unSplitNames;
+		//Set<String> str1 = ces.splitNames;
+		Set<String> str2 =  new HashSet<String>();//ces.dictWord1;
 		for(String eachId2:str2){
 			 message2 += eachId2 + "    ";
 		}
 		
-		for(String eachId3 : str1){
+		for(String eachId3 : str2){
 			 message2 += eachId3 + "    ";
 		}
 		
 		//Checking whether the string token is dictionary word or not
 		DictWordChecker dictCheck = new DictWordChecker();
-		for(String eachId1:str1){
-			if(dictCheck.check_for_word(eachId1) == true) {
+		for(String eachId1:str2){
+			StringBuilder strb = new StringBuilder(eachId1);
+			if(dictCheck.check_for_word(strb) == true) {
 			 message1 += eachId1 + "    ";
 			}
 		}

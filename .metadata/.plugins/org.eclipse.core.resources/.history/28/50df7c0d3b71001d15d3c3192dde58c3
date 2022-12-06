@@ -1,0 +1,25 @@
+package com.iitm.raj.hello;
+
+import java.io.FileReader;
+import java.util.Iterator;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.*;
+import org.json.simple.JSONArray;
+
+public class JSONParserForAbbreviation {
+	public static String wordForAbbreviation(String str) {
+		JSONParser parser = new JSONParser();
+	    try {
+	    	Object obj = parser.parse(new FileReader("E:\\eclipse\\com.iitm.raj.hello\\Data\\abbr.json"));
+	       JSONObject jsonObj = (JSONObject)obj;
+	       JSONArray jsonArr = (JSONArray) jsonObj.get("abbreviations");
+	       Iterator iterator = subjects.iterator();
+	    } catch(Exception e) {
+	        e.printStackTrace();
+	     }
+		return str;
+	}
+	
+	
+}

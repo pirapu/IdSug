@@ -1,0 +1,17 @@
+package com.iitm.raj.hello;
+
+import java.io.FileReader;
+
+import org.json.simple.JSONObject;
+
+public class JSONParser {
+	public static String wordForAbbreviation(String str) {
+		JSONParser parser = new JSONParser();
+	    try {
+	    	JSONObject obj = (JSONObject)parser.parse(new FileReader("/Users/User/Desktop/course.json"));
+	       JSONObject jsonObject = (JSONObject)obj;
+	    } catch(Exception e) {
+	        e.printStackTrace();
+	     }
+	}
+}

@@ -1,0 +1,70 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class NGram {
+
+
+	//Generating n-grams
+	static Set<String> getGrams(String word, int k) {
+		Set<String> kGrams = new HashSet<String>();
+		for (int wordIndex = 0; wordIndex < word.length() - k + 1; wordIndex++) {
+			kGrams.add(word.substring(wordIndex, wordIndex + k));
+		}
+		return kGrams;
+	}
+	
+	//Generating posting lists for all ngarms
+	public static Map<String, Set<String>> postList(String word, int k) throws IOException{
+		Map<String, Set<String>> postingList = new HashMap<String, Set<String>>();
+		Set<String> getGrams = getGrams(word, k);
+		
+		for(String eachGram: getGrams) {
+			Set<String> lstPstLst =  genList(eachGram);
+			//System.out.println(eachGram); 	  
+            postingList.put(eachGram, lstPstLst);
+		}
+		
+		return postingList;
+	}
+	
+	
+	//Generating list for posting list from dictionary
+	public static Set<String> genList(String nGrams) throws IOException{
+		File path = new File(Settings.getSpellTestPath());
+		FileInputStream fis= new FileInputStream(new File(path.toString()));
+    	BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+        String str = br.readLine();
+        
+        Set<String>  lstPstLst = new HashSet<String>();
+        while ((str = br.readLine()) != null) {
+            if (str.contains(nGrams)) {
+               lstPstLst.add(str);
+            }
+        }
+        br.close();
+        fis.close();
+		return lstPstLst;
+	}
+	
+	@SuppressWarnings("rawtypes")
+	public static void main(String[] args) throws IOException {
+		Map<String, Set<String>> pstList = postList("word", 2);
+		
+		  Set set=pstList.entrySet();//Converting to Set so that we can traverse
+		  Iterator itr=set.iterator(); 
+		  while(itr.hasNext()){ //Converting to Map.Entry
+		  //so that we can get key and value separately 
+		Map.Entry entry=(Map.Entry)itr.next();
+		  System.out.println(entry.getKey()+" "+entry.getValue()); 
+		  }
+		  
+	}
+}

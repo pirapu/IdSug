@@ -24,9 +24,11 @@ class TernarySearchTree
     
     
     /** function to insert for a word **/
-    public void insert(String word)
+    public void insert(StringBuilder word)
     {
-        root = insert(root, word.toCharArray(), 0);
+    	char[] array = new char[word.length()];
+		word.getChars(0, word.length(), array, 0);
+        root = insert(root, array, 0);
     }
     
     /** function to insert for a word **/
@@ -51,9 +53,11 @@ class TernarySearchTree
  
     
     /** function to search for a word **/
-    public boolean search(String word)
-    {
-        return search(root, word.toCharArray(), 0);
+    public boolean search(StringBuilder word)
+    {	
+    	char[] array = new char[word.length()];
+		word.getChars(0, word.length(), array, 0);
+        return search(root, array, 0);
     }
     /** function to search for a word **/
     private boolean search(TSTNode r, char[] word, int ptr)

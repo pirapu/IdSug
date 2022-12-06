@@ -20134,7 +20134,6 @@ arquebuses
 arquebusier
 arquerite
 arquifoux
-arr
 arracach
 arracacha
 arracacia
@@ -145454,7 +145453,6 @@ hwan
 hwy
 hwyl
 hwt
-i
 y
 ia
 ya
@@ -159796,7 +159794,6 @@ izzard
 izzards
 izzat
 izzy
-j
 ja
 jaalin
 jaap
@@ -196395,7 +196392,6 @@ mwalimu
 mxd
 mzee
 mzungu
-n
 na
 naa
 naam
@@ -318500,7 +318496,6 @@ temiskaming
 temne
 temnospondyli
 temnospondylous
-temp
 tempe
 tempean
 tempeh
