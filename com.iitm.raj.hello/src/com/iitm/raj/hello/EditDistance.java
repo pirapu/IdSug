@@ -46,14 +46,12 @@ public class EditDistance {
 	    // Driver Code
 	    public static void main(String args[]) throws IOException
 	    {
-	    	NGram ng = new NGram();
 	    	Set<String> sugWrdList = new HashSet<>();
-	  	  	Set<String> grams = (Set<String>) ng.getGrams("wrd", 2);
-	  	  	Map<String, Set<String>> pstList = ng.postList("wrd", 2);
+	  	  	Map<String, Set<String>> pstList = NGram.postList("wrd", 2);
 	  		for(String key : pstList.keySet()) {
 	  			Set<String> values = (Set<String>) pstList.get(key);
 	  			for(String value : values) {
-	  				int eDistance = editDist("wed", value, "wrd".length(), value.length());
+	  				int eDistance = editDist("wrd", value, "wrd".length(), value.length());
 	  				if(eDistance<=5) {
 	  					sugWrdList.add(value);
 	  				}

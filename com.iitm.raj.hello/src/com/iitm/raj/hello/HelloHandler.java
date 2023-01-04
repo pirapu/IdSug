@@ -1,6 +1,8 @@
 package com.iitm.raj.hello;
 
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.core.commands.AbstractHandler;
@@ -22,46 +24,53 @@ public class HelloHandler extends AbstractHandler {
 	@SuppressWarnings("static-access")
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
-		
-		//reading active file name
+
+		// reading active file name
 		IWorkbench wb = PlatformUI.getWorkbench();
 		IWorkbenchWindow window = wb.getActiveWorkbenchWindow();
 		IWorkbenchPage page = window.getActivePage();
 		IEditorPart editor = page.getActiveEditor();
 		IEditorInput input = editor.getEditorInput();
 		String fileName = input.getName();
-		IPath path = ((FileEditorInput)input).getPath();
+		IPath path = ((FileEditorInput) input).getPath();
 		String url = path.toString();
-		
-		
-		
-		//Splitting the string token
+
+		// Accessing ASTParser, finding dictionary words from identifiers, splitting
+		// composed identifiers
 		String message1 = "";
 		String message2 = "";
+
 		CamelExplicitSplitter ces = new CamelExplicitSplitter();
 		ces.idfyIdentifiers(url);
-		//Set<String> str1 = ces.splitNames;
-		Set<String> str2 =  new HashSet<String>();//ces.dictWord1;
-		for(String eachId2:str2){
-			 message2 += eachId2 + "    ";
+		
+		//dictionary word list
+		Map<String, Set<String>> dictWords = ces.wordList;
+		Set set1 = dictWords.entrySet();
+		Iterator itr1 = set1.iterator();
+		while (itr1.hasNext()) { // Converting to Map.Entry //so that we can get key and value separately
+
+			@SuppressWarnings("rawtypes")
+			Map.Entry entry = (Map.Entry) itr1.next();
+			//System.out.println(entry.getKey() + " " + entry.getValue());
+			message1 = message1+ entry.getKey() + " " + entry.getValue() + "       ";
 		}
 		
-		for(String eachId3 : str2){
-			 message2 += eachId3 + "    ";
+		//split word list
+		Map<String, Set<String>> splitWrds = ces.wrdSplit;
+		Set set2 = splitWrds.entrySet();
+		Iterator itr2= set2.iterator();
+		while (itr2.hasNext()) { // Converting to Map.Entry //so that we can get key and value separately
+
+			@SuppressWarnings("rawtypes")
+			Map.Entry entry = (Map.Entry) itr2.next();
+			//System.out.println(entry.getKey() + " " + entry.getValue());
+			//for (String splStr : entry.getValue()) {
+				
+			//}
 		}
-		
-		//Checking whether the string token is dictionary word or not
-		DictWordChecker dictCheck = new DictWordChecker();
-		for(String eachId1:str2){
-			StringBuilder strb = new StringBuilder(eachId1);
-			if(dictCheck.check_for_word(strb) == true) {
-			 message1 += eachId1 + "    ";
-			}
-		}
-		
-		//for displaying the identifiers
+		// for displaying the identifiers
 		Shell shell = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell();
-		MessageDialog.openInformation(shell, fileName , message2);
+		MessageDialog.openInformation(shell, fileName, message1);
 		return null;
 	}
 

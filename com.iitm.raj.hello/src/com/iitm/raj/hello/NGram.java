@@ -61,7 +61,7 @@ public class NGram {
 	
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException {
-		Map<String, Set<String>> pstList = postList("word", 2);
+		Map<String, Set<String>> pstList = postList("wrdpnt", 3);
 		
 		  Set set=pstList.entrySet();//Converting to Set so that we can traverse
 		  Iterator itr=set.iterator(); 

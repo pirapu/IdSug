@@ -47,13 +47,15 @@ public static void main(String[] args) throws IOException
   {
 	  NGram ng = new NGram();
 	  Set<String> sugWrdList = new HashSet<>();
-	  Set<String> grams = (Set<String>) ng.getGrams("wrd", 2);
-	  Map<String, Set<String>> pstList = ng.postList("wrd", 2);
+	  Set<String> grams = (Set<String>) ng.getGrams("wrdpnt", 3);
+	  Map<String, Set<String>> pstList = ng.postList("wrdpnt", 3);
 		for(String key : pstList.keySet()) {
 			Set<String> values = (Set<String>) pstList.get(key);
+			System.out.println(values);
 			for(String value : values) {
-				Set<String> gramsOfValue = (Set<String>) ng.getGrams(value, 2);
+				Set<String> gramsOfValue = (Set<String>) ng.getGrams(value, 3);
 				double jIndex = jaccard_index(grams, gramsOfValue);
+				System.out.println(value+ " "+jIndex);
 				if(jIndex >= 0.2) {
 					sugWrdList.add(value);
 				}

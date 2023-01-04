@@ -1,0 +1,44 @@
+package com.iitm.raj.hello;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class WordListCreater {
+
+public static Map<String, Set<String>> wrdListForAbbr(){
+	
+	CamelExplicitSplitter.wrdUnsplitUnknown.values().removeIf(Set::isEmpty);
+	Set<String> setUnknown = CamelExplicitSplitter.wrdUnsplitUnknown.keySet();
+	Map<String,Set<String>> dictListForAbbr = new HashMap<String, Set<String>>();
+	
+	
+	for (String abrId : setUnknown) {
+		Set<String> realWrdForAbrSet = new HashSet<String>();
+			for (String abr : CamelExplicitSplitter.wrdUnsplitUnknown.get(abrId)) {
+				//System.out.println(abr);
+					if (abr.length() >= 2) {
+					
+				}
+				
+				
+			}
+		dictListForAbbr.put(abrId, realWrdForAbrSet);
+	}
+	
+	return dictListForAbbr;
+	
+}
+
+public static Map<String, Set<String>> wrdListForSplit(){
+	
+	return null;
+}
+
+public static void main(String[] args) {
+	CamelExplicitSplitter.idfyIdentifiers("E:\\raaaj\\src\\raj\\BubbleSortExample.java");
+	Map<String, Set<String>> wlf = wrdListForAbbr();
+	System.out.println(CamelExplicitSplitter.wrdSplit);
+}
+}

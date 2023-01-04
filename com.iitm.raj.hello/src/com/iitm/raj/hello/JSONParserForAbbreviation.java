@@ -13,8 +13,9 @@ public class JSONParserForAbbreviation {
 	
 	static Set<String> wrdForAbbr = new HashSet<String>();
 	
+	//getting all the full words for abbreviation from the JSON file
 	@SuppressWarnings("rawtypes")
-	public static void wordForAbbreviation(String str) {
+	public static Set<String> wordForAbbreviation(String str) {
 		
 		JSONParser parser = new JSONParser();
 	    try {
@@ -22,7 +23,7 @@ public class JSONParserForAbbreviation {
 	       JSONObject jsonObj = (JSONObject)obj;
 	       JSONArray jsonArr = (JSONArray) jsonObj.get("abbreviations");
 	       for (Object object : jsonArr.toArray()) {
-	    	    //System.out.println( ((HashMap) object).get("abbr")+ " - " +  ((HashMap) object).get("desc"));
+	    	    //System.out.println("Raaaaj"+ ((HashMap) object).get("abbr").toString().equalsIgnoreCase(str));
 	    	   	if(((HashMap) object).get("abbr").toString().equalsIgnoreCase(str)) {
 	    	   		wrdForAbbr.add(((HashMap) object).get("desc").toString());
 	    	   	}
@@ -30,13 +31,42 @@ public class JSONParserForAbbreviation {
 	    } catch(Exception e) {
 	        e.printStackTrace();
 	     }
+		return wrdForAbbr;
 		
 	}
 	
+	//check whether the abbr is available or not 
+	@SuppressWarnings("rawtypes")
+	public static boolean isAbbr(String str) {
+		
+		boolean isThere = false;
+		JSONParser parser = new JSONParser();
+	    try {
+	    	Object obj = parser.parse(new FileReader("E:\\eclipse\\com.iitm.raj.hello\\Data\\abbr.json"));
+	       JSONObject jsonObj = (JSONObject)obj;
+	       JSONArray jsonArr = (JSONArray) jsonObj.get("abbreviations");
+	       for (Object object : jsonArr.toArray()) {
+	    	   // System.out.println("Raaaaj"+ ((HashMap) object).get("abbr").toString().equalsIgnoreCase(str));
+	    	   	if(((HashMap) object).get("abbr").toString().equalsIgnoreCase(str)) {
+	    	   		isThere = true;
+	    	   		return isThere;
+	    	   	}
+	    	   	
+	       }
+	    } catch(Exception e) {
+	        e.printStackTrace();
+	     }
+		return isThere;
+	}
+	
 	public static void main(String[] args) {
-		wordForAbbreviation("str");
-		for(String descWrd : wrdForAbbr) {
-			System.out.println(descWrd);
+		
+		  boolean is = isAbbr("arr"); 
+		  System.out.println(is);
+		 
+		Set<String> srdLstForAbbr = wordForAbbreviation("arr");
+		for(String descWrd : srdLstForAbbr) {
+			//System.out.println(descWrd);
 		}
 	}
 }

@@ -1,6 +1,7 @@
 package com.iitm.raj.hello;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,11 +10,11 @@ import java.util.Set;
 
 public class CamelExplicitSplitter {
 
-	
 	static Map<String, Set<String>> wordList = new HashMap<String, Set<String>>();
-	static Map<String, Set<String>> wrdUnsplit = new HashMap<String, Set<String>>();
+	static Map<String, Set<String>> wrdUnsplitUnknown = new HashMap<String, Set<String>>();
 	static Map<String, Set<String>> wrdSplit = new HashMap<String, Set<String>>();
-
+	static DictWordChecker dctWrdChk = new DictWordChecker();
+	
 	@SuppressWarnings({ "static-access" })
 	public static void idfyIdentifiers(String path) {
 
@@ -25,67 +26,80 @@ public class CamelExplicitSplitter {
 				StringBuilder identifier = new StringBuilder(identifiers);
 				// System.out.println(identifiers);
 
-				// StringBuilder str2 = new StringBuilder();
-				// checking whether the extracted identifiers are dictionary word or not
-				DictWordChecker dctWrdChk = new DictWordChecker();
-				if (dctWrdChk.check_for_word(identifier) == true) {
+				
+				
+				//Checking whether the extracted identifiers are an meaningful abbreviation
+				Set<String> tempSet = new HashSet<String>();
+				if(JSONParserForAbbreviation.isAbbr(identifiers)) {
+					Set<String> srdLstForAbbr = JSONParserForAbbreviation.wordForAbbreviation(identifiers);
+					tempSet.addAll(srdLstForAbbr);
+					wordList.put(identifiers, tempSet);
+					srdLstForAbbr.clear();
+					
+					
+				// checking whether the extracted identifiers are dictionary words or not
+				}else if (dctWrdChk.check_for_word(identifier) == true) {    
 					Set<String> dictWord1 = new HashSet<String>();
 					dictWord1.add(identifiers);
 					wordList.put(identifiers, dictWord1);
+					
+					
+				// split the composed identifiers
 				} else if (identifiers.matches(".*[A-Z0-9_$].*")) {
-
-					// split the composed identifiers
-					Set<String> splitNames = new HashSet<String>();
 					Set<String> dictWord2 = new HashSet<String>();
+					Set<String> unSplitNames = new HashSet<String>();
 					for (String wd : identifiers.split("(?=[A-Z0-9_$])")) {
-						//System.out.println(wd);
-						
+						 //System.out.println(wd);
 						String wd1 = wd.replaceAll("[0-9_$]", "").toLowerCase();
-						
 						StringBuilder wrd = new StringBuilder(wd1);
 						//System.out.println(wd1);
 						if (wd1.length() >= 2 && dctWrdChk.check_for_word(wrd) == true) {
-							
-							//System.out.println(wd1);
 							dictWord2.add(wd1);
-							
-						} else {
-							splitNames.add(wd);
+						} else if(JSONParserForAbbreviation.isAbbr(wd1) == true){
+							// System.out.println(wd1);
+							Set<String> setWrdForAbbr = JSONParserForAbbreviation.wordForAbbreviation(wd1);
+							dictWord2.addAll(setWrdForAbbr);
+							setWrdForAbbr.clear();
+						}else {
+							if(wd1.length()>=2) {
+							unSplitNames.add(wd1);
+							}
 						}
 					}
 					wordList.put(identifiers, dictWord2);
-					wrdSplit.put(identifiers, splitNames);
-					// splitNames.clear();
+					wrdUnsplitUnknown.put(identifiers, unSplitNames);
+					
+				//if the identifiers are just string token	
 				} else {
 					Set<String> unSplitNames = new HashSet<String>();
 					unSplitNames.add(identifiers);
-					wrdUnsplit.put(identifiers, unSplitNames);
+					wrdUnsplitUnknown.put(identifiers, unSplitNames);
 				}
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
+	
 	public static void main(String[] args) {
 		idfyIdentifiers("E:\\raaaj\\src\\raj\\BubbleSortExample.java");
 
-		@SuppressWarnings("rawtypes")
-		Set set = wrdUnsplit.entrySet();// Converting to Set so that we can traverse
-
-		@SuppressWarnings("rawtypes")
-		Iterator itr = set.iterator();
-		while (itr.hasNext()) { // Converting to Map.Entry //so that we can get key and value separately
-
-			@SuppressWarnings("rawtypes")
-			Map.Entry entry = (Map.Entry) itr.next();
-			System.out.println(entry.getKey()+" "+entry.getValue());
-		}
-
-		/*
-		 * for(String s : splitNames) { System.out.println(s); }
-		 */
+		wrdUnsplitUnknown.values().removeIf(Set::isEmpty);
+		  @SuppressWarnings("rawtypes") 
+		  Set set = wrdUnsplitUnknown.entrySet();// Converting toSet so that we can traverse
+		  
+		  @SuppressWarnings("rawtypes") 
+		  Iterator itr = set.iterator(); 
+		  while
+		  (itr.hasNext()) { // Converting to Map.Entry //so that we can get key and value separately
+		  
+		  @SuppressWarnings("rawtypes") 
+		  Map.Entry entry = (Map.Entry) itr.next();
+		  System.out.println(entry.getKey()+" "+entry.getValue()); 
+		  }
+		 
+		
 
 	}
 }

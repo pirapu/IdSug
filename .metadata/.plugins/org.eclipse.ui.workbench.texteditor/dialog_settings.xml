@@ -6,14 +6,15 @@
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="n"/>
+		<item key="selection" value="arr"/>
 		<list key="findhistory">
+			<item value="arr"/>
+			<item value="ptrmmmm"/>
+			<item value="cnt"/>
 			<item value="n"/>
 			<item value="j"/>
 			<item value="i"/>
-			<item value="arr"/>
 			<item value="temp"/>
-			<item value="cnt"/>
 			<item value="wrd"/>
 			<item value="adm"/>
 			<item value="ale"/>

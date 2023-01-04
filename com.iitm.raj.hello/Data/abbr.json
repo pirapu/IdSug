@@ -555,6 +555,10 @@
         "desc": "control"
     },
     {
+        "abbr": "cntr", 
+        "desc": "control"
+    },
+    {
         "abbr": "col", 
         "desc": "column"
     },

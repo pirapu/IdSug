@@ -1,0 +1,78 @@
+package com.iitm.raj.hello;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class WordListCreater {
+
+	public static Set<String> jacardList(String str1, int k) throws IOException {
+		Set<String> sugWrdListJcd = new HashSet<>();
+		Set<String> grams = (Set<String>) NGram.getGrams(str1, k);
+		Map<String, Set<String>> pstList = NGram.postList(str1, k);
+		for (String key : pstList.keySet()) {
+			Set<String> values = (Set<String>) pstList.get(key);
+			for (String value : values) {
+				Set<String> gramsOfValue = (Set<String>) NGram.getGrams(str1, k);
+				double jIndex = JaccardCoeficient.jaccard_index(grams, gramsOfValue);
+				if (jIndex >= 0.2) {
+					sugWrdListJcd.add(value);
+				}
+			}
+		}
+		return sugWrdListJcd;
+	}
+
+	public static Set<String> editDistanceList(String str2, int k) throws IOException {
+		Set<String> sugWrdListEds = new HashSet<>();
+		Map<String, Set<String>> pstList = NGram.postList(str2, k);
+		for (String key : pstList.keySet()) {
+			Set<String> values = (Set<String>) pstList.get(key);
+			for (String value : values) {
+				int eDistance = EditDistance.editDist("wed", value, "wrd".length(), value.length());
+				if (eDistance <= 5) {
+					sugWrdListEds.add(value);
+				}
+			}
+
+		}
+		return sugWrdListEds;
+	}
+
+	public static Map<String, Set<String>> wrdListForUnknownToken() throws IOException {
+
+		CamelExplicitSplitter.wrdUnsplitUnknown.values().removeIf(Set::isEmpty);
+		Set<String> setUnknown = CamelExplicitSplitter.wrdUnsplitUnknown.keySet();
+		Map<String, Set<String>> dictListForUnknownToken = new HashMap<String, Set<String>>();
+
+		for (String abrId : setUnknown) {
+			Set<String> wrdListForTokens = new HashSet<String>();
+			for (String abr : CamelExplicitSplitter.wrdUnsplitUnknown.get(abrId)) {
+				// System.out.println(abr);
+				if (abr.length() >= 2) {
+					for(int k = 2; k<abr.length(); k++) {
+						Set<String> jcdList = jacardList(abr, k);
+						Set<String> edList = editDistanceList(abr, k);
+						wrdListForTokens.addAll(jcdList);
+						wrdListForTokens.addAll(edList);
+					}
+				}
+
+			}
+			dictListForUnknownToken.put(abrId, wrdListForTokens);
+		}
+
+		return dictListForUnknownToken;
+
+	}
+
+
+	public static void main(String[] args) throws IOException {
+		CamelExplicitSplitter.idfyIdentifiers("E:\\raaaj\\src\\raj\\BubbleSortExample.java");
+		Map<String, Set<String>> wlf = wrdListForUnknownToken();
+		//System.out.println(CamelExplicitSplitter.wordList);
+		System.out.println(wlf);
+	}
+}
