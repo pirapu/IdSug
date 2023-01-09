@@ -1,0 +1,5 @@
+bin.includes = Data/,\
+               lib/json-simple-1.1.jar,\
+               json-simple-1.1.jar
+source.json-simple-1.1.jar = src/
+

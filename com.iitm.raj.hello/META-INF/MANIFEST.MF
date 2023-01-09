@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello World
+Bundle-SymbolicName: com.iitm.raj.hello;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui;bundle-version="3.201.100",
+ org.eclipse.core.runtime,
+ org.eclipse.ui.ide;bundle-version="3.19.100",
+ org.eclipse.jdt.core;bundle-version="3.31.0",
+ org.eclipse.core.resources;bundle-version="3.18.0"
+Import-Package: javax.inject,
+ org.eclipse.ecf.core.util;version="3.6.0"
+Bundle-Vendor: IITM
+Automatic-Module-Name: com.iitm.raj.hello
+Bundle-ClassPath: lib/json-simple-1.1.jar,
+ json-simple-1.1.jar,
+ lib/stanford-corenlp-4.4.0.jar,
+ lib/stanford-corenlp-4.4.0-models.jar
+Bundle-RequiredExecutionEnvironment: JavaSE-18

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.eclipse.jface.dialogs.MessageDialog"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IFileEditorInput"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.ASTReader"/>
+    <fullyQualifiedTypeName name="javax.swing.JList"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.zip.GZIPInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.DictWordChecker"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="test.Settings"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbench"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbenchWindow"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IWorkbenchPage"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IEditorPart"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.IEditorInput"/>
+    <fullyQualifiedTypeName name="org.eclipse.core.runtime.IPath"/>
+    <fullyQualifiedTypeName name="org.eclipse.ui.part.FileEditorInput"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.CamelExplicitSplitter"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.iitm.raj.hello.WordListCreater"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>
